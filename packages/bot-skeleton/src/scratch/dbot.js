@@ -89,6 +89,8 @@ class DBot {
                 window.dispatchEvent(new Event('resize'));
                 window.addEventListener('dragover', DBot.handleDragOver);
                 window.addEventListener('drop', e => DBot.handleDropOver(e, handleFileChange));
+                window.addEventListener('keydown', e => (this.workspace.shiftPressed = e.shiftKey));
+                window.addEventListener('keyup', e => (this.workspace.shiftPressed = e.shiftKey));
 
                 // disable overflow
                 el_scratch_div.parentNode.style.overflow = 'hidden';

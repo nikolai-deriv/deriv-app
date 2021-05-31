@@ -1,4 +1,5 @@
 import './block';
+import './block_dragger';
 import './block_render_svg_vertical';
 import './block_svg';
 import './colours';
