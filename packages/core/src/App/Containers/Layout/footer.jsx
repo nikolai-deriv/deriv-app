@@ -13,6 +13,7 @@ import {
     ToggleFullScreen,
     ToggleSettings,
 } from 'App/Components/Layout/Footer';
+import Community from 'App/Components/Elements/Community';
 import LiveChat from 'App/Components/Elements/LiveChat';
 import { connect } from 'Stores/connect';
 import ServerTime from '../server-time.jsx';
@@ -67,6 +68,7 @@ const Footer = ({
             <ServerTime />
             <div className='footer__links'>
                 {footer_extensions_right.map(FooterExtensionRenderer)}
+                <Community />
                 <LiveChat />
                 <FooterIconSeparator />
                 <GoToDeriv />

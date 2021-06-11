@@ -13,9 +13,9 @@ module.exports = function (env, argv) {
         devServer: {
             open: openChromeBasedOnPlatform(process.platform),
             openPage: sub_path,
-            host: is_qawolf ? 'localhost' : 'localhost.binary.sx',
-            https: !is_qawolf,
-            port: is_qawolf ? 3000 : 443,
+            host: 'localhost', //is_qawolf ? 'localhost' : 'localhost.binary.sx',
+            https: false, //!is_qawolf,
+            port: 8000, //is_qawolf ? 3000 : 443,
             historyApiFallback: true,
             stats: {
                 colors: true,
